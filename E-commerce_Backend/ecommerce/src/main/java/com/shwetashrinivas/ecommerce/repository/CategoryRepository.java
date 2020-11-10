@@ -4,6 +4,7 @@ import com.shwetashrinivas.ecommerce.entity.ProductCategory;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
+@CrossOrigin('http://localhost:4200')
 @RepositoryRestResource(collectionResourceRel = "productCategory", path="product-category")  //Name of JSON entry, /product-category
 public interface CategoryRepository extends JpaRepository<ProductCategory,Long> {
 }
